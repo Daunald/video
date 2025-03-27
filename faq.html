@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <title>DAILYMOTION - FAQ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 40px 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: 90%;
+            text-align: left;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+            text-align: center;
+        }
+
+        .important-message {
+            background-color: #fffae6;
+            border-left: 5px solid #ffcc00;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .faq-item {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        .faq-item h3 {
+            font-size: 20px;
+            color: #0066cc;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .faq-item p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0066cc;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button:hover {
+            background-color: #004d99;
+            transform: scale(1.05);
+        }
+
+        .button::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button:hover::before {
+            width: 0;
+            height: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .faq-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">DAILYMOTION</div>
+        <h2>Foire aux questions (FAQ)</h2>
+
+       
+
+        <!-- Important message -->
+        <div class="important-message">
+            <p><strong>Important : Nous avons détecté une vidéo sur notre plateforme qui se trouve dans la catégorie "vidéos pour enfants" mais qui ne respecte pas nos politiques. Cette vidéo contient du contenu inapproprié et peut enfreindre des lois sur la protection des mineurs. Nous vous contactons pour vous aider à la supprimer le plus rapidement possible.</strong></p>
+        </div>
+
+        <p>Bienvenue dans notre section FAQ ! Vous y trouverez des réponses aux questions les plus fréquemment posées par nos utilisateurs. Si vous ne trouvez pas la réponse à votre question, notre équipe de support est à votre disposition pour vous aider.</p>
+
+        <!-- FAQ items -->
+        <div class="faq-item">
+            <h3>Pourquoi ma vidéo a été classée dans la catégorie "vidéos pour enfants" ?</h3>
+            <p>Notre plateforme filtre toutes les vidéos et les catégorise en fonction de leur contenu. Cependant, il arrive parfois que des vidéos inappropriées soient mal classées par erreur. Si une vidéo a été téléchargée dans la mauvaise catégorie, elle doit être supprimée immédiatement, car elle enfreint nos politiques sur la sécurité et la protection des mineurs.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Pourquoi nous contacter ?</h3>
+            <p>Nous vous contactons car la vidéo en question ne respecte pas nos règles, et elle a été détectée dans une catégorie à risque. Il est essentiel que nous supprimions cette vidéo le plus rapidement possible pour protéger les utilisateurs et respecter les lois sur la protection des enfants.</p>
+            <p>Nous avons besoin de votre coopération pour comprendre comment cette vidéo est arrivée sur notre plateforme et nous fournir des informations sur son origine.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Quelles informations devons-nous fournir ?</h3>
+            <p>Nous vous demandons de nous fournir les informations suivantes :</p>
+            <ul>
+                <li>Comment la vidéo a été téléchargée sur notre plateforme ?</li>
+                <li>Est-ce que vous avez été victime d'une usurpation d'identité ?</li>
+                <li>Avez-vous reçu des menaces ou des demandes de paiement en lien avec cette vidéo ?</li>
+            </ul>
+            <p>Ces informations nous aideront à retirer la vidéo plus rapidement et à résoudre cette situation de manière efficace.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Comment supprimer la vidéo ?</h3>
+            <p>Pour supprimer la vidéo de notre plateforme, suivez ces étapes :</p>
+            <ol>
+                <li>Connectez-vous à votre compte Dailymotion.</li>
+                <li>Accédez à la section "Mes vidéos".</li>
+                <li>Recherchez la vidéo que vous souhaitez supprimer.</li>
+                <li>Cliquez sur les trois points à côté de la vidéo.</li>
+                <li>Sélectionnez "Supprimer" et confirmez.</li>
+            </ol>
+            <p>Si vous avez besoin d'aide supplémentaire pour supprimer cette vidéo, contactez notre support directement.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Que faire si vous avez été victime de chantage ou d’extorsion ?</h3>
+            <p>Si vous êtes victime d'une tentative de chantage en lien avec la vidéo, il est crucial de ne pas céder aux demandes de paiement. Conservez toutes les preuves possibles (captures d'écran, messages, etc.) et contactez immédiatement notre support, ainsi que les autorités compétentes.</p>
+            <p>Nous travaillerons avec les forces de l'ordre pour vous aider et faire en sorte que la vidéo soit supprimée partout sur internet.</p>
+        </div>
+
+        <!-- Legal Information Section -->
+        <div class="faq-item">
+            <h3>Informations légales</h3>
+            <p><strong>Exhibitionnisme et pédophilie : Des actes criminels graves</strong></p>
+            <p>Si cette vidéo concerne des actes d'exhibitionnisme ou de pédophilie, il est impératif de savoir que de tels actes sont des crimes. Ces actes peuvent entraîner de lourdes peines de prison et des amendes importantes. Il est crucial que cette vidéo soit supprimée immédiatement et que les autorités soient informées.</p>
+            <p><strong>Nous vous conseillons de cesser immédiatement toute activité illégale et de nous fournir toute information pouvant nous aider à résoudre cette affaire rapidement.</strong></p>
+        </div>
+
+
+        <a href="mailto:support@dailymotion.com" class="button">Contacter le support</a>
+    </div>
+</body>
+</html>
