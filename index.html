@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <title>DAILYMOTION Support</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 40px 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: 90%;
+            text-align: center;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background-color: #000;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .code-box-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .code-box-container input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .code-box-container button {
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .code-box-container button:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+        .help-section {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .help-section h3 {
+            font-size: 22px;
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+        .help-item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .help-item:hover {
+            background-color: #f1f1f1;
+        }
+        .help-item h4 {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 0;
+        }
+        .help-item p {
+            font-size: 16px;
+            color: #555;
+            font-weight: normal;
+        }
+        .contact-button {
+            padding: 15px 30px;
+            background-color: #0066cc;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .contact-button:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+        .faq-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #0066cc;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+        .faq-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Nouveau style pour les éléments en gras */
+        .help-item strong {
+            color: #333;
+        }
+
+        /* Ajout de couleur d'arrière-plan pour les titres et boutons */
+        .contact-button {
+            background-color: #3498db;
+        }
+
+        .contact-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        function validateCode() {
+            var codeInput = document.getElementById('codeInput').value.trim();
+            var videoFrame = document.getElementById('videoFrame');
+            var videoSection = document.getElementById('videoSection');
+
+            const videoCodes = {
+                'VIDMartiniBianco': 'https://drive.google.com/file/d/1X88mp26nlSJlvWoQQ5ubEaUo0gTdbBpJ/preview',
+                'VIDSylvainGautier': 'https://drive.google.com/file/d/1zFwrZd4z-8wdPu9jpbo7_5_Uwx10c3Zy/preview'
+            };
+
+            if (videoCodes[codeInput]) {
+                videoFrame.src = videoCodes[codeInput];
+                alert('Vidéo défloutée avec succès !');
+            } else {
+                alert('Code incorrect. Veuillez réessayer.');
+            }
+        }
+
+        function contactSupport() {
+            window.location.href = "mailto:support@dailymotion.com?subject=Problème vidéo&body=Bonjour,%0D%0A%0D%0AJe rencontre un problème avec une vidéo. Voici les détails :%0D%0A%0D%0A";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">DAILYMOTION</div>
+        <h2>Bienvenue sur le Support DAILYMOTION</h2>
+        <p><strong>Nous sommes là pour vous aider à résoudre tous vos problèmes concernant les vidéos sur notre plateforme.</strong></p>
+        <div class="video-container" id="videoSection">
+            <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="code-box-container">
+            <input type="text" id="codeInput" placeholder="Entrez votre code vidéo" />
+            <button onclick="validateCode()">Déflouter la vidéo</button>
+        </div>
+
+        <!-- Section d'aide ajoutée -->
+        <div class="help-section">
+            <h3>A savoir lire FAQ ?</h3>
+            <div class="help-item">
+                <h4>Problèmes de vidéo</h4>
+                <p><strong>Cette vidéo enfreint gravement les règles de notre plateforme car elle est mise à la disposition des enfants et des utilisateurs de moins de 18 ans.</strong> Il s'agit d'une violation des lois sur la protection des mineurs et d'un délit extrêmement sérieux. Ce type de contenu, qui montre des actes d'exhibition sexuelle ou de pédophilie, est strictement interdit par nos conditions d'utilisation et par la loi. Publier une vidéo de cette nature, en sachant qu'elle expose des parties intimes du corps humain, est une infraction grave qui peut entraîner de lourdes conséquences légales.</p>
+                <p><strong>Nous vous rappelons que de tels actes peuvent entraîner des peines de prison et des amendes sévères.</strong> Nous prenons cette situation très au sérieux et avons immédiatement pris les mesures nécessaires pour supprimer cette vidéo de notre plateforme. Nous encourageons également les victimes à signaler tout incident de cette nature aux autorités compétentes afin d'éviter toute propagation de contenu illégal et de protéger la sécurité des enfants.</p>
+            </div>
+
+            <div class="help-item">
+                <h4>Supprimer la vidéo</h4>
+                <p><strong>Si vous avez publié une vidéo par erreur ou si vous souhaitez la retirer de notre plateforme, suivez les étapes ci-dessous pour procéder à sa suppression :</strong></p>
+                <ol>
+                    <li>Accédez à la section <strong>"Mes vidéos"</strong> de votre profil.</li>
+                    <li>Trouvez la vidéo concernée dans la liste de vos publications.</li>
+                    <li>Cliquez sur l'option <strong>"Supprimer"</strong> située à côté de la vidéo que vous souhaitez retirer.</li>
+                </ol>
+                <p><strong>Nous vous encourageons à supprimer rapidement tout contenu inapproprié</strong> ou qui ne respecte pas les règles de notre plateforme pour assurer un environnement sécurisé et respectueux pour tous les utilisateurs.</p>
+            </div>
+
+            <div class="help-item">
+                <h4>Contacter le support</h4>
+                <p><strong>Si vous souhaitez supprimer une vidéo de notre plateforme, nous vous prions de bien vouloir nous contacter avec les informations suivantes :</strong></p>
+                <ul>
+                    <li><strong>Nom complet :</strong> Votre nom et prénom.</li>
+                    <li><strong>Adresse :</strong> Votre adresse complète.</li>
+                    <li><strong>Détails sur la vidéo :</strong> Expliquez comment la vidéo est arrivée sur notre site (y compris toutes les informations pertinentes, comme les contacts avec le suspect, les dates, et tout autre détail utile).</li>
+                </ul>
+                <p><strong>Une fois que nous aurons reçu toutes ces informations, nous vous fournirons les étapes à suivre pour supprimer la vidéo de notre plateforme.</strong></p>
+            </div>
+        </div>
+
+        <!-- Lien vers la section FAQ -->
+        <a href="#faq" class="faq-link">Voir la FAQ</a>
+
+        <!-- Bouton de contact ajouté -->
+        <button class="contact-button" onclick="contactSupport()">Contacter le Support</button>
+    </div>
+
+    <!-- Section FAQ (invisible initialement, ancrée au bas) -->
+    <div id="faq" style="display: none;">
+        <h2>FAQ</h2>
+        <p>Questions fréquentes pour aider à résoudre les problèmes courants.</p>
+    </div>
+</body>
+</html>
